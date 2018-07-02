@@ -20,6 +20,7 @@ header {
     min-height: 500px;
     width: 100%;
     text-align: right;
+    transition: all ease 0.5s;
 }
 
 #title {
@@ -205,6 +206,7 @@ footer {
     font-family: var(--font-title);
     color: #fff;
     font-size: 1.4em;
+    padding: 20px;
 }
 
 footer a {
@@ -225,6 +227,35 @@ a {
 li {
     list-style-type: none;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        background-position: 26%;
+    }
+
+    #title {
+        margin: 300px 10% 0;
+    }
+    section#intro {
+        width: 100%;
+        display: block;
+    }
+
+    section#timeline .info {
+        display: block;
+    }
+
+    section#timeline .info h3 {
+        width: 50%;
+        min-width: auto;
+        margin: 10px auto;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+}
+
 
 
 
